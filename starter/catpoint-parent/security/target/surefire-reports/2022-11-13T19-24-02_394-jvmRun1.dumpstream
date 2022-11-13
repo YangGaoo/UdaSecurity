@@ -1,0 +1,15 @@
+# Created at 2022-11-13T19:24:04.882
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of boot layer'.
+
+# Created at 2022-11-13T19:24:04.884
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'java.lang.module.FindException: Error reading module:'.
+
+# Created at 2022-11-13T19:24:04.885
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream '/Users/victoria/Downloads/cd0384-java-application-deployment-projectstarter-master/starter/catpoint-parent/security/target/classes'.
+
+# Created at 2022-11-13T19:24:04.885
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Caused by: java.lang.module.InvalidModuleDescriptorException:'.
+
+# Created at 2022-11-13T19:24:04.886
+Corrupted STDOUT by directly writing to native stream in forked JVM 1. Stream 'Package com.udacity.catpoint.security not found in module'.
+

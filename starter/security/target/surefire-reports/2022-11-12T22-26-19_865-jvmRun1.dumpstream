@@ -1,6 +1,0 @@
-# Created at 2022-11-12T22:26:20.494
-Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'Error occurred during initialization of boot layer'.
-
-# Created at 2022-11-12T22:26:20.496
-Corrupted channel by directly writing to native stream in forked JVM 1. Stream 'java.lang.RuntimeException: Unable to parse --add-opens <module>=<value>: com.udacity.catpoint.security'.
-
