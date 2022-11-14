@@ -79,6 +79,7 @@ public class SecurityServiceTest {
     @Test
     void changeSensorActivationStatusTest_alarm_activated_sensorStatus_changed_thenReturn_Not_Affected_AlarmStatus() {
         when(securityService.getAlarmStatus()).thenReturn(AlarmStatus.ALARM);
+        securityService.changeSensorActivationStatus(sensor,false);
         assertEquals(AlarmStatus.ALARM, securityService.getAlarmStatus());
     }
 
