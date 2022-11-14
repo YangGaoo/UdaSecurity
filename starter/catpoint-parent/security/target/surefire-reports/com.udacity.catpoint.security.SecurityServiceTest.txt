@@ -1,4 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: com.udacity.catpoint.security.SecurityServiceTest
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.337 s - in com.udacity.catpoint.security.SecurityServiceTest
+Tests run: 14, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 1.515 s <<< FAILURE! - in com.udacity.catpoint.security.SecurityServiceTest
+com.udacity.catpoint.security.SecurityServiceTest.changeSensorActivationStatusTest_inactivatedSensors_with_pendingAlarm_thenReturn_NoAlarm  Time elapsed: 1.175 s  <<< FAILURE!
+org.mockito.exceptions.verification.opentest4j.ArgumentsAreDifferent: 
+
+Argument(s) are different! Wanted:
+securityRepository.setAlarmStatus(
+    NO_ALARM
+);
+-> at com.udacity.catpoint.security/com.udacity.catpoint.security.SecurityServiceTest.changeSensorActivationStatusTest_inactivatedSensors_with_pendingAlarm_thenReturn_NoAlarm(SecurityServiceTest.java:77)
+Actual invocations have different arguments:
+securityRepository.setAlarmStatus(
+    PENDING_ALARM
+);
+-> at com.udacity.catpoint.security/com.udacity.catpoint.security.service.SecurityService.setAlarmStatus(SecurityService.java:100)
+securityRepository.getAlarmStatus(
+    
+);
+-> at com.udacity.catpoint.security/com.udacity.catpoint.security.service.SecurityService.changeSensorActivationStatus(SecurityService.java:137)
+securityRepository.updateSensor(
+    com.udacity.catpoint.security.data.Sensor@86248065
+);
+-> at com.udacity.catpoint.security/com.udacity.catpoint.security.service.SecurityService.changeSensorActivationStatus(SecurityService.java:146)
+securityRepository.updateSensor(
+    com.udacity.catpoint.security.data.Sensor@86248065
+);
+-> at com.udacity.catpoint.security/com.udacity.catpoint.security.service.SecurityService.changeSensorActivationStatus(SecurityService.java:148)
+
+	at com.udacity.catpoint.security/com.udacity.catpoint.security.SecurityServiceTest.changeSensorActivationStatusTest_inactivatedSensors_with_pendingAlarm_thenReturn_NoAlarm(SecurityServiceTest.java:77)
+
